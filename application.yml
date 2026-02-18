@@ -1,3 +1,9 @@
-spring:
-  application:
-    config:
+eureka:
+  instance:
+    prefer-ip-address:true
+   
+  client:
+    fetch-register:true
+    ragister-with-eureka:true
+    service-url:
+      default-zone:http://localhost:8761/eureka
